@@ -34,5 +34,15 @@ namespace Full_GRASP_And_SOLID.Library
                     $"usando '{step.Equipment.Description}' durante {step.Time}");
             }
         }
+
+        public double GetProductionCost()
+        {
+            double totalPrice = 0;
+            foreach (Step step in steps)
+            {
+                totalPrice += step.TotalCost();
+            }
+            return totalPrice;
+        }
     }
 }
