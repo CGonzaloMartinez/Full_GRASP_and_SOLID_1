@@ -6,6 +6,11 @@
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /*
+        Decidimos que Step debería ser el encargado de calcular el costo total del step en si, ya que es el experto (Patrón Expert),
+        tiene toda la información necesaria para realizar esa tarea, porque conoce los productos y sus cantidades
+        y el equipamiento y su tiempo de uso.
+    */
     public class Step
     {
         public Step(Product input, double quantity, Equipment equipment, int time)
@@ -26,7 +31,7 @@ namespace Full_GRASP_And_SOLID.Library
 
         public double TotalCost()
         {
-            return ((this.Input.UnitCost * this.Quantity) + (this.Equipment.HourlyCost * this.Time));
+            return ((this.Input.UnitCost * this.Quantity) + (this.Equipment.HourlyCost * (this.Time/60)));
         }
     }
 }

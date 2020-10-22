@@ -9,6 +9,11 @@ using System.Collections;
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /*
+        Por otra parte decidimos que la clase recipe debería ser la que calculara
+        el costo total de la receta, ya que contiene una lista de todos los steps
+        por lo cual sería la clase experta en realizar dicha tarea (Patrón Expert).
+    */
     public class Recipe
     {
         private ArrayList steps = new ArrayList();
