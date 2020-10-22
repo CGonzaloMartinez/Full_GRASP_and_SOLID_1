@@ -6,6 +6,11 @@
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /*
+        Decidimos que Step debería ser el encargado de calcular el costo total de si mismo, ya que es el experto,
+        tiene toda la información necesaria para realizar esa tarea, ya que conoce los productos y sus cantidades
+        y el equipamiento y su tiempo de uso.
+    */
     public class Step
     {
         public Step(Product input, double quantity, Equipment equipment, int time)
