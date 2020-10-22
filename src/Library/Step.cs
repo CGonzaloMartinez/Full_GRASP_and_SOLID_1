@@ -26,7 +26,7 @@ namespace Full_GRASP_And_SOLID.Library
 
         public double TotalCost()
         {
-            return ((this.Input.UnitCost * this.Quantity) + (this.Equipment.HourlyCost * this.Time));
+            return ((this.Input.UnitCost * this.Quantity) + (this.Equipment.HourlyCost * (this.Time/60)));
         }
     }
 }
