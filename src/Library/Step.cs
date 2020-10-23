@@ -8,7 +8,7 @@ namespace Full_GRASP_And_SOLID.Library
 {
     /*
         Decidimos que Step debería ser la clase encargada de calcular el costo total del step en si, ya que es el experto (Patrón Expert),
-        tiene toda la información necesaria para realizar esa tarea, porque conoce los productos y sus cantidades
+        tiene toda la información necesaria para realizar esa tarea, porque conoce los productos y sus cantidades,
         y el equipamiento y su tiempo de uso.
         Esta clase también cumple con el SRP, ya que el único motivo de cambio que tiene es que cambie la forma de crear un step, lo cual
         cambiaría el calculo del costo.
